@@ -11,12 +11,12 @@ if [ ! -a /root/docker-is-ready ]; then
 
     # Comfortable access to docker
     sudo usermod -a -G docker vagrant
-    echo "cd /vagrant/docker && docker-compose ps" >> /home/vagrant/.bashrc
+    echo "cd /vagrant && docker-compose ps" >> /home/vagrant/.bashrc
 
     touch /root/docker-is-ready
 fi
 
 # Start containers
-cd /vagrant/docker
+cd /vagrant
 docker-compose build
 docker-compose up -d
