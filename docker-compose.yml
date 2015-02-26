@@ -1,0 +1,3 @@
+example:
+    image: busybox
+    command: sh -c "echo Hello World"
