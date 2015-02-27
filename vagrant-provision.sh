@@ -2,7 +2,7 @@
 set -e
 
 docker_compose_path=/usr/local/bin/docker-compose
-if [ ! -a "$docker_compose_path" ]; then
+if [ ! -f "$docker_compose_path" ]; then
     # Install docker
     curl -sSL https://get.docker.com/ubuntu/ | sh
 
