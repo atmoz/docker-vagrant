@@ -7,7 +7,7 @@ if [ ! -f "$docker_compose_path" ]; then
     curl -sSL https://get.docker.com/ubuntu/ | sh
 
     # Install docker compose
-    curl -L https://github.com/docker/compose/releases/download/1.1.0/docker-compose-`uname -s`-`uname -m` > "$docker_compose_path"
+    curl -L https://github.com/docker/compose/releases/download/1.2.0/docker-compose-`uname -s`-`uname -m` > "$docker_compose_path"
     chmod +x "$docker_compose_path"
 
     # Comfortable access to docker
